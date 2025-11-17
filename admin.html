@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - DRONE & NATURE ° / °</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="admin-container">
+        <!-- Sidebar -->
+        <nav class="admin-sidebar">
+            <div class="admin-logo">
+                <div class="logo">🌌</div>
+                <h2>DRONE & NATURE</h2>
+                <small>Admin Panel</small>
+            </div>
+            
+            <div class="admin-menu">
+                <a href="#dashboard" class="menu-item active">
+                    📊 Tableau de bord
+                </a>
+                <a href="#media" class="menu-item">
+                    🖼️ Gestion Médias
+                </a>
+                <a href="#messages" class="menu-item">
+                    📧 Messages
+                </a>
+                <a href="#members" class="menu-item">
+                    👥 Membres
+                </a>
+                <a href="#settings" class="menu-item">
+                    ⚙️ Paramètres
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <header class="admin-header">
+                <h1>Tableau de Bord</h1>
+                <div class="admin-actions">
+                    <button class="btn-primary" id="refreshBtn">
+                        🔄 Actualiser
+                    </button>
+                    <button class="btn-secondary" id="logoutBtn">
+                        🚪 Déconnexion
+                    </button>
+                </div>
+            </header>
+
+            <!-- Dashboard Stats -->
+            <section id="dashboard" class="admin-section active">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">🖼️</div>
+                        <div class="stat-info">
+                            <h3 id="totalMedia">0</h3>
+                            <p>Médias total</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📧</div>
+                        <div class="stat-info">
+                            <h3 id="totalMessages">0</h3>
+                            <p>Messages reçus</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👁️</div>
+                        <div class="stat-info">
+                            <h3 id="totalViews">0</h3>
+                            <p>Vues totales</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-info">
+                            <h3 id="onlineStatus">🟢</h3>
+                            <p>Status</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="activity-section">
+                    <h3>Activité Récente</h3>
+                    <div class="activity-list" id="activityList">
+                        <div class="activity-item">
+                            <div class="activity-icon">🆕</div>
+                            <div class="activity-content">
+                                <p>Nouveau média ajouté</p>
+                                <small>Il y a 2 minutes</small>
+                            </div>
+                        </div>
+                        <div class="activity-item">
+                            <div class="activity-icon">📧</div>
+                            <div class="activity-content">
+                                <p>Message reçu de Jean Dupont</p>
+                                <small>Il y a 15 minutes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Media Management -->
+            <section id="media" class="admin-section">
+                <div class="section-header">
+                    <h2>Gestion des Médias</h2>
+                    <button class="btn-primary" id="addMediaBtn">
+                        ➕ Ajouter un média
+                    </button>
+                </div>
+
+                <!-- Media Upload -->
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-placeholder">
+                        <div class="upload-icon">📁</div>
+                        <p>Glissez-déposez vos fichiers ici</p>
+                        <small>ou</small>
+                        <button class="btn-secondary">Parcourir</button>
+                    </div>
+                </div>
+
+                <!-- Media List -->
+                <div class="media-list" id="mediaList">
+                    <div class="media-item">
+                        <div class="media-preview">
+                            <img src="assets/images/montagne-1.jpg" alt="Preview" onerror="this.style.display='none'">
+                        </div>
+                        <div class="media-info">
+                            <h4>Massif des Maures</h4>
+                            <p>Vue aérienne du massif des Maures au coucher du soleil</p>
+                            <div class="media-meta">
+                                <span>📸 Photo</span>
+                                <span>🏔️ Montagne</span>
+                                <span>15 Jan 2024</span>
+                            </div>
+                        </div>
+                        <div class="media-actions">
+                            <button class="btn-action edit">✏️</button>
+                            <button class="btn-action delete">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Messages Management -->
+            <section id="messages" class="admin-section">
+                <div class="section-header">
+                    <h2>Messages de Contact</h2>
+                </div>
+
+                <div class="messages-list" id="messagesList">
+                    <div class="message-item unread">
+                        <div class="message-header">
+                            <h4>Jean Dupont</h4>
+                            <span class="message-date">Aujourd'hui, 14:30</span>
+                        </div>
+                        <p class="message-preview">Bonjour, je suis intéressé par vos prestations drone...</p>
+                        <div class="message-actions">
+                            <button class="btn-action">👁️</button>
+                            <button class="btn-action">📧</button>
+                            <button class="btn-action">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Members Management -->
+            <section id="members" class="admin-section">
+                <h2>Gestion des Membres</h2>
+                <p class="coming-soon">🚧 Fonctionnalité à venir...</p>
+            </section>
+
+            <!-- Settings -->
+            <section id="settings" class="admin-section">
+                <h2>Paramètres du Site</h2>
+                <p class="coming-soon">🚧 Fonctionnalité à venir...</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="admin-dashboard.js"></script>
+</body>
+</html>
