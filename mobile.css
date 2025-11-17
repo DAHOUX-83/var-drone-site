@@ -1,0 +1,97 @@
+/* mobile.css - VERSION SPATIALE */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .filters {
+        padding: 1.5rem;
+        margin: 1rem;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .filter-btn {
+        padding: 0.6rem 1.2rem;
+        margin: 0 0.3rem;
+        font-size: 0.8rem;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .modal-content {
+        grid-template-columns: 1fr;
+        width: 95%;
+        margin: 10% auto;
+    }
+
+    .modal-media {
+        min-height: 40vh;
+    }
+
+    .regulations {
+        margin: 1rem;
+        padding: 2rem 1rem;
+    }
+
+    .regulations h2 {
+        font-size: 2rem;
+    }
+
+    .reg-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-badge {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .nav-brand h1 {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Var Drone Association - Galerie Spatiale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <div class="logo">🚁</div>
+            <h1>Var Drone Association</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="active">Accueil</a>
+            <a href="#gallery">Galerie</a>
+            <a href="#regulations">Réglementation</a>
+            <a href="#about">L'Association</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>VAR DRONE ASSOCIATION</h2>
+            <p>L'élégance du Var vue du ciel</p>
+            <button class="cta-button">Découvrir la Galerie</button>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="filters">
+        <button class="filter-btn active" data-filter="all">Tout Voir</button>
+        <button class="filter-btn" data-filter="montagne">🏔️ Massifs</button>
+        <button class="filter-btn" data-filter="cote">🌊 Côte Varoise</button>
+        <button class="filter-btn" data-filter="foret">🌲 Forêts</button>
+        <button class="filter-btn" data-filter="video">🎥 Vidéos</button>
+        <button class="filter-btn" data-filter="drone">🚁 Prises Drone</button>
+    </section>
+
+    <!-- Galerie -->
+    <section class="gallery" id="gallery">
+        <div class="grid-container">
+            <!-- Les médias seront ajoutés dynamiquement -->
+        </div>
+    </section>
+
+    <!-- Section Réglementation -->
+    <section class="regulations" id="regulations">
+        <h2>📋 Règlementation Drone</h2>
+        <div class="reg-grid">
+            <div class="reg-card">
+                <h3>📜 Lois Françaises</h3>
+                <ul>
+                    <li>Respect des hauteurs maximales</li>
+                    <li>Zones d'interdiction de vol</li>
+                    <li>Déclaration DGAC</li>
+                    <li>Assurance obligatoire</li>
+                    <li>Respect de la vie privée</li>
+                </ul>
+            </div>
+            <div class="reg-card">
+                <h3>🛡️ Sécurité</h3>
+                <ul>
+                    <li>Distance des personnes</li>
+                    <li>Conditions météo</li>
+                    <li>Contrôle visuel permanent</li>
+                    <li>Checklist pré-vol</li>
+                    <li>Plan de vol</li>
+                </ul>
+            </div>
+            <div class="reg-card">
+                <h3>📁 Documents</h3>
+                <ul>
+                    <li>Certificat d'aptitude</li>
+                    <li>Attestation d'assurance</li>
+                    <li>Manuel du drone</li>
+                    <li>Registre des vols</li>
+                    <li>Autorisations spéciales</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- Section À Propos -->
+<section class="about" id="about">
+    <div class="about-container">
+        <div class="about-content">
+            <h2>🚁 NOTRE ASSOCIATION</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🎯</div>
+                    <h3>NOTRE MISSION</h3>
+                    <p>Promouvoir la pratique responsable du drone dans le Var, partager notre passion pour la photographie aérienne et créer une communauté de pilotes engagés.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">👥</div>
+                    <h3>NOTRE ÉQUIPE</h3>
+                    <p>Des passionnés de drone, photographes et vidéastes expérimentés, tous certifiés et soucieux du respect de l'environnement et des réglementations.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🌍</div>
+                    <h3>NOTRE ENGAGEMENT</h3>
+                    <p>Respect strict de l'environnement varois, valorisation du patrimoine naturel et partage de connaissances techniques et réglementaires.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Contact -->
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <h2>📞 NOUS CONTACTER</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Var Drone Association</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>83 - Var, Provence-Alpes-Côte d'Azur</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span>contact@vardrone.fr</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>04 XX XX XX XX</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🕒</span>
+                    <span>Lun-Ven: 9h-18h</span>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <h3>Envoyez-nous un message</h3>
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <select id="subject" name="subject" required>
+                        <option value="">Sujet du message</option>
+                        <option value="info">Information</option>
+                        <option value="adhesion">Adhésion</option>
+                        <option value="project">Projet</option>
+                        <option value="regulation">Réglementation</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Votre message..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="mediaModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-media"></div>
+            <div class="modal-info">
+                <h3 id="mediaTitle"></h3>
+                <p id="mediaDescription"></p>
+                <div class="media-meta">
+                    <span>📅 <span id="mediaDate"></span></span>
+                    <span>📍 <span id="mediaLocation"></span></span>
+                    <span>⚙️ <span id="mediaEquipment"></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Badge Admin -->
+    <div class="admin-badge" title="Espace Admin">
+        🔧
+    </div>
+
+    <footer>
+        <p>🚁 Var Drone Association - 2024 - Tél. : 04 XX XX XX XX</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
