@@ -1,8 +1,8 @@
 // database.js - CONFIGURATION SUPABASE LIVE
 
 const SUPABASE_CONFIG = {
-    url: 'https://xoalzkazphrwoequfnmd.supabase.co',  // Ton URL ici
-    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvYWx6a2F6cGhyd29lcXVmbm1kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMzODcyMjgsImV4cCI6MjA3ODk2MzIyOH0.CX6NuDFAdbNrmTczkjm_tBHxIo4g3JUPKjyGlazPVtI'  // Ta clé anon ici
+    url: ' https://xoalzkazphrwoequfnmd.supabase.co',  // À MODIFIER
+    anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhvYWx6a2F6cGhyd29lcXVmbm1kIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjMzODcyMjgsImV4cCI6MjA3ODk2MzIyOH0.CX6NuDFAdbNrmTczkjm_tBHxIo4g3JUPKjyGlazPVtI'                   // À MODIFIER
 };
 
 // ==================== FONCTIONS SUPABASE ====================
