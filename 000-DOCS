@@ -70,3 +70,9 @@ drone-nature-gallery/
 3. [ADMIN] Dashboard de gestion
 4. [AUTOMATION] Système emails
 ---------------------------------------------------------------------------
+push sur GitHub:
+git add admin.html admin.css admin-dashboard.js
+git status
+git commit -m "🚀 Ajout du dashboard admin ultra sombre"
+git push
+
