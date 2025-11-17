@@ -64,3 +64,9 @@ drone-nature-gallery/
 ├── 🗃️ database.js         (NOUVEAU - pour parler à la base)
 └── 📂 assets/             (EXISTE DÉJÀ)
 --------------------------------------------------------------------------
+
+1. [FONDATIONS] Design + Titre ← NOUS SOMMES ICI
+2. [DONNÉES] Connexion Supabase 
+3. [ADMIN] Dashboard de gestion
+4. [AUTOMATION] Système emails
+---------------------------------------------------------------------------
